@@ -20,10 +20,14 @@ export default function KeyboardGame() {
             }
         };
 
-        window.addEventListener('keydown', handleKeyPress);
+        if (typeof window !== 'undefined') { // Vérifie si window est défini avant d'ajouter des écouteurs d'événements
+            window.addEventListener('keydown', handleKeyPress);
+        }
         
         return () => {
-            window.removeEventListener('keydown', handleKeyPress);
+            if (typeof window !== 'undefined') { // Retire l'écouteur d'événements uniquement si window est défini
+                window.removeEventListener('keydown', handleKeyPress);
+            }
         };
     }, [targetKey, score]);
 
