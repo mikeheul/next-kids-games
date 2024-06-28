@@ -14,7 +14,7 @@ export default function ClickGame() {
     return (
         <div className="flex flex-col items-center justify-center pt-10 text-center">
             <h1 className="text-2xl mb-4">Score : {score}</h1>
-            <p className="mb-4">Clique sur l'oiseau pour augmenter ton score.</p>
+            <p className="mb-4">Clique sur l&apos;oiseau pour augmenter ton score.</p>
             <motion.div
                 className="flex justify-center items-center w-24 h-36 bg-red-500 rounded-full cursor-pointer hover:bg-red-700 mt-10"
                 onClick={handleClick}
