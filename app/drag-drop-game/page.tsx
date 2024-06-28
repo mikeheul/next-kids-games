@@ -46,7 +46,7 @@ export default function DragDropGame() {
     return (
         <div className="flex flex-col items-center justify-center pt-10 text-center">
             <h1 className="text-2xl mb-4">Score : {score}</h1>
-            <p className="mb-4">Glisse et dépose l'écureuil dans la maison pour augmenter ton score. La couleur de la boîte changera à chaque tentative réussie.</p>
+            <p className="mb-4">Glisse et dépose l&apos;écureuil dans la maison pour augmenter ton score. La couleur de la boîte changera à chaque tentative réussie.</p>
             <div
                 className={`flex justify-center items-center w-24 h-24 ${currentColor} cursor-grab mt-10`}
                 draggable
